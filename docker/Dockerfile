@@ -49,7 +49,7 @@ RUN mamba env create -n $ENV_NAME \
     --file /tmp/environment.yaml \
   && cd /opt/services/ \
   && . /tmp/poetry-install.sh \
-  && conda clean --all \
+  && mamba clean --all \
   && find /opt/conda/ -type f,l -name '*.a' -delete \
   && find /opt/conda/ -type f,l -name '*.pyc' -delete \
   && find /opt/conda/ -type f,l -name '*.js.map' -delete \

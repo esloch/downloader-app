@@ -31,6 +31,10 @@ sys.path.insert(0, WORK_DIR)
 
 # Path to source data files
 DOWNLOADFILES_PATH = os.path.join(WORK_DIR, 'DownloadedFiles')
+# /work-lab/repos/osl/downloader-app/downloader_app/DownloadedFiles
+print(DOWNLOADFILES_PATH)
+# /home/esloch/.config/earthengine/credentials
+
 
 # Initialize Google Earth Engine.
 ee.Initialize()

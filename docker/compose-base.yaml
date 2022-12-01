@@ -39,7 +39,7 @@ services:
     restart: always
     healthcheck:
       test: ["CMD-SHELL", 'celery --app downloader_app.celeryapp.app inspect ping -d "celery@$${HOSTNAME}"']
-      interval: 60s
+      interval: 30s
       timeout: 10s
       retries: 5
       start_period: 30s

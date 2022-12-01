@@ -3,7 +3,11 @@
 from celery import Celery
 
 
-app = Celery('downloader_app')
+app = Celery(
+    'downloader_app',
+    include=["tasks"],
+
+    )
 
 app.config_from_object('downloader_app.celeryconfig')
 

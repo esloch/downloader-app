@@ -1,11 +1,11 @@
 from downloader_app.celeryapp import app
 
 
-@app.task
-def add(x, y):
-    return x + y
+# @app.task
+# def add(x, y):
+#     return x + y
 
-'''
+
 
 import os
 import sys
@@ -39,4 +39,3 @@ def download_source(source, dates, point1, point2, opt=False):
         return
 
     return
-'''
